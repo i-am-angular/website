@@ -1,0 +1,20 @@
+:host {
+  flex: 1;
+}
+
+.waa-background {
+  height: 100%;
+  width: 100%;
+  background-image: url('https://cdn-images-1.medium.com/max/2400/1*eG2MFl0sGRKFmd_USgA_8Q.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.waa-semi-transparent-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #ff6666;
+}
