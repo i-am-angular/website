@@ -18,3 +18,31 @@
   opacity: 0.5;
   background: #ff6666;
 }
+
+.waa-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+.waa-react {
+  font-size: 26px;
+}
+
+.waa-vue {
+  font-size: 36px;
+}
+
+.waa-angular {
+  font-size: 96px;
+}
