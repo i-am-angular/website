@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: do-kubernetes-sample-app
+spec:
+  rules:
+  - host: stritfighter.com
+    http:
+      paths:
+      - backend:
+          serviceName: do-kubernetes-sample-app
+          servicePort: 80
