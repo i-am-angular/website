@@ -16,6 +16,5 @@ spec:
       containers:
         - name: do-kubernetes-sample-app
           image: nasreddineskandrani/de:latest
-          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 4200
