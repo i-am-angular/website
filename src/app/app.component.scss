@@ -2,3 +2,16 @@
   display: flex;
   height: 100%;
 }
+
+.waf-title {
+  background: url(../assets/images/people.gif) no-repeat;
+  background-size: cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* this property is not yet supported by all browser, not official yet... i tmay not work for all users*/
+}
+
+.waf-text {
+  font-size: 56px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
