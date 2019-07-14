@@ -6,9 +6,16 @@
 
 .waf-card {
   min-height: 50px;
-  border: 1px solid black;
 }
 
 .waf-dynamic-text {
   font-size: 90px;
+}
+
+.waf-pokemon-text {
+  font-size: 56px;
+  font-family: "pokemon", sans-serif;
+  font-weight: 700;
+  color: yellow;
+  text-shadow: 4px 0 0 blue, -4px 0 0 blue, 0 4px 0 blue, 0 -4px 0 blue, 4px 4px blue, -4px -4px 0 blue, 4px -4px 0 blue, -4px 4px 0 blue
 }
