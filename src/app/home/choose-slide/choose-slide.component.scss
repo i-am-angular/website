@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.waf-card {
+  min-height: 50px;
+  border: 1px solid black;
+}
+
+.waf-dynamic-text {
+  font-size: 90px;
+}
