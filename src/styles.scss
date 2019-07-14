@@ -12,3 +12,45 @@ html, body {
   font-family: 'pokemon';
   src: url('./assets/pokemon.ttf');
 }
+
+
+// button special
+.waf-button {
+  border-radius: 4px;
+  border: 3px solid white;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 240px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.waf-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: white;
+}
+
+.waf-button span:after {
+  content: '\00bb';
+  color: #FFFFFF;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.waf-button:hover span {
+  padding-right: 25px;
+}
+
+.waf-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

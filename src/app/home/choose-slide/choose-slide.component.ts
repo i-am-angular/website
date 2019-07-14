@@ -27,7 +27,7 @@ export class ChooseSlideComponent implements AfterViewInit {
         console.log('onComplete scene 1');
         this.hidePokemonScene = true;
         const optionsB = {
-          strings: ['Oupsss! little bug ;)', 'Choose your "Framework"!! '],
+          strings: ['Oupsss! little bug ;)', 'Choose your Tech. !! '],
           typeSpeed: 50,
           backSpeed: 50,
           backDelay: 1000,
