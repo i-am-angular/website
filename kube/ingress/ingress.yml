@@ -4,7 +4,7 @@ metadata:
   name: do-kubernetes-sample-ingress
 spec:
   rules:
-  - host: www.stritfighter.com
+  - host: www.wearefrontend.com
     http:
       paths:
       - path: /
