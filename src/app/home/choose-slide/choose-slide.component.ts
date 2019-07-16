@@ -21,7 +21,7 @@ export class ChooseSlideComponent implements AfterViewInit {
       backSpeed: 50,
       backDelay: 2000,
       showCursor: true,
-      cursorChar: '|',
+      cursorChar: '',
       loop: false,
       onComplete: () => {
         console.log('onComplete scene 1');

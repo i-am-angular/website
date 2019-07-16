@@ -5,18 +5,18 @@
 :host {
   display: flex;
   flex-direction: column;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
   padding-top: 50px;
   z-index: 5;
 }
 
-.waf-card {
-  min-height: 50px;
-}
-
 .waf-dynamic-text {
   font-size: 26px;
-  color: black;
+  font-weight: 600;
 }
 
 .waf-pokemon-text {
@@ -32,8 +32,8 @@
 }
 
 .size-poke {
-  width: 200px;
-  height: 210px;
+  width: 209px;
+  height: 259px;
 }
 
 .size-a {
@@ -52,6 +52,15 @@
 }
 
 @include media-breakpoint-up(md) {
+  .size-poke {
+    width: 299px;
+    height: 371px;
+  }
+
+  .waf-box {
+    height: 300px;
+  }
+
   .size-a {
     width: 190px;
     height: 190px;
@@ -59,11 +68,15 @@
 
   .size-b {
     width: 270px;
-    height: 290px;
+    height: 270px;
   }
 
   .size-c {
     width: 250px;
     height: 250px;
+  }
+
+  .waf-pokemon-text {
+    font-size: 46px;
   }
 }
