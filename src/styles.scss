@@ -1,11 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body {
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  height: 100%;
-  width: 100%;
+  flex: 1 0 auto;
+
+  display: flex;
+  flex-direction: column;
 }
 
 @font-face {
@@ -17,8 +29,7 @@ html, body {
 // button special
 .waf-button {
   border-radius: 4px;
-  border: 3px solid white;
-  color: #FFFFFF;
+  border: 3px solid black;
   text-align: center;
   font-size: 16px;
   padding: 10px;
@@ -33,7 +44,7 @@ html, body {
   display: inline-block;
   position: relative;
   transition: 0.5s;
-  color: white;
+  color: black;
 }
 
 .waf-button span:after {

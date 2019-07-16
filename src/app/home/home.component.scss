@@ -1,26 +1,12 @@
 :host {
-  flex: 1;
-}
-
-.waf-background {
-  height: 100%;
-  width: 100%;
-  background-image: url('https://cdn-images-1.medium.com/max/2400/1*eG2MFl0sGRKFmd_USgA_8Q.jpeg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.waf-semi-transparent-layer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
-  background: #ff6666;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
 
 .waf-main {
   position: absolute;
+
   top: 0;
   left: 0;
   z-index: 20;

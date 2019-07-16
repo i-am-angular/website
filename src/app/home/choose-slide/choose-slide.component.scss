@@ -7,6 +7,7 @@
   flex-direction: column;
   width: 100%;
   padding-top: 80px;
+  z-index: 5;
 }
 
 .waf-card {
@@ -14,11 +15,12 @@
 }
 
 .waf-dynamic-text {
-  font-size: 48px;
+  font-size: 26px;
+  color: black;
 }
 
 .waf-pokemon-text {
-  font-size: 36px;
+  font-size: 26px;
   font-family: "pokemon", sans-serif;
   font-weight: 700;
   color: yellow;
