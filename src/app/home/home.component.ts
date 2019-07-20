@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   title = 'weareangular';
+
+  config: any;
+
+  constructor() {
+    this.config = {
+      navigation: true,
+      loop: true
+    };
+  }
 }
