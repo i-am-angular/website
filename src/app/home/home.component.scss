@@ -1,21 +1,77 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
+
 :host {
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;
+  flex: 1;
+
+  color: black;
+  border: 1px solid red;
 }
 
-.waf-main {
+.waf-home {
+  // background: green;
+
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;
+  flex: 1;
+
+  padding: 100px 0px;
+}
+
+.waf-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  background: #fafafa;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: column;
 
   justify-content: center;
   align-items: center;
 }
 
+.mid-section {
+  display: flex;
+  flex-direction: column;
 
-.footer-copyright {
-  color: #C0C0C0;
-  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1;
 }
 
+.size-a {
+  width: 190px;
+  height: 190px;
+}
+
+.size-b {
+  width: 270px;
+  height: 270px;
+}
+
+.size-c {
+  width: 250px;
+  height: 250px;
+}
+
+.size-poke {
+  width: 89px;
+  height: 119px;
+}
+
+@include media-breakpoint-up(md) {
+
+}

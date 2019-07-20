@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.waf-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer-copyright {
+  color: #C0C0C0;
+  font-weight: 600;
+}
+

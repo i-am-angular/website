@@ -4,13 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { ChooseSlideComponent } from './home/choose-slide/choose-slide.component';
+import { ChooseSlideComponent } from './intro/choose-slide/choose-slide.component';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    //
     HomeComponent,
-    ChooseSlideComponent
+    ChooseSlideComponent,
+    //
+    IntroComponent
   ],
   imports: [
     BrowserModule,
