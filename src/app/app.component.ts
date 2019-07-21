@@ -7,8 +7,11 @@ import { HomeService } from './home/home.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'weareangular';
+  public index: number;
 
   constructor(private homeService: HomeService) {
+    this.homeService.slideIndex$.subscribe(value => {
+      this.index = value;
+    });
   }
 }

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectorRef, ViewChild } from '@angular/core';
 import { HomeService } from './home.service';
+import { SwiperComponent } from 'ngx-swiper-wrapper';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +8,9 @@ import { HomeService } from './home.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  title = 'weareangular';
-
   config: any;
 
-  constructor(private homeService: HomeService) {
+  constructor(private homeService: HomeService, private cd: ChangeDetectorRef) {
     this.config = {
       loop: true,
       keyboard: true,
@@ -24,7 +23,8 @@ export class HomeComponent {
     };
   }
 
-  test(newIndex) {
+  ic(newIndex) {
     this.homeService.slideIndex = newIndex;
   }
+
 }

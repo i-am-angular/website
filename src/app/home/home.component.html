@@ -1,15 +1,14 @@
 <div class="waf-home container">
   <div class="waf-content">
+    <swiper [config]="config" (indexChange)="ic($event)">
 
-    <swiper [config]="config" (indexChange)="test($event)">
-
-      <div class="swiper-slide">
+      <div class=" swiper-slide">
         <div class="header-section">
           <div class="title py-3">wearefrontend&trade;</div>
         </div>
 
         <div class="mid-section">
-          <img src="./assets/images/angular.png" />
+          video john papa
           <!--
               <a style="margin-top: 20px" href="https://gitter.im/wearefrontend/waf-ng" target="_black" class="waf-button">
                 <span>Join waf-ng</span>
@@ -37,12 +36,8 @@
         </div>
 
         <div class="mid-section">
-          <img src="./assets/images/angular.png" />
-          <!--
-          <a style="margin-top: 20px" href="https://gitter.im/wearefrontend/waf-ng" target="_black" class="waf-button">
-            <span>Join waf-ng</span>
-          </a>
-        -->
+          <app-accordion>
+          </app-accordion>
         </div>
 
         <div class="footer">
@@ -65,10 +60,8 @@
         </div>
 
         <div class="mid-section">
-          <img class="size-a" src="./assets/images/vue.png" />
-          <a style="margin-top: 20px" href="https://gitter.im/wearefrontend/waf-vue" target="_black" class="waf-button">
-            <span>Join waf-vue</span>
-          </a>
+          <app-accordion>
+          </app-accordion>
         </div>
 
         <div class="footer">
@@ -91,11 +84,8 @@
         </div>
 
         <div class="mid-section">
-          <img class="size-c" src="./assets/images/react.png" />
-          <a style="margin-top: 20px" href="https://gitter.im/wearefrontend/waf-react" target="_black"
-            class="waf-button">
-            <span>Join waf-vue</span>
-          </a>
+          <app-accordion>
+          </app-accordion>
         </div>
 
         <div class="footer">

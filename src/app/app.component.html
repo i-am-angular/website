@@ -4,9 +4,9 @@
 </div>
 -->
 <div class="root all-background-theme" [ngClass]="{
-    'all-background-theme': homeService.slideIndex === 0,
-    'vue-background-theme': homeService.slideIndex === 2,
-    'ng-background-theme' : homeService.slideIndex === 1,
-    'react-background-theme': homeService.slideIndex === 3}">
+    'all-background-theme': index === 0,
+    'vue-background-theme': index === 2,
+    'ng-background-theme' : index === 1,
+    'react-background-theme': index === 3}">
   <router-outlet></router-outlet>
 </div>

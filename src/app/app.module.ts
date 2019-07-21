@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ChooseSlideComponent } from './intro/choose-slide/choose-slide.component';
 import { IntroComponent } from './intro/intro.component';
+import { AccordionComponent } from './home/accordion.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -20,10 +21,11 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   declarations: [
     AppComponent,
     //
+    IntroComponent,
+    //
     HomeComponent,
     ChooseSlideComponent,
-    //
-    IntroComponent
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
