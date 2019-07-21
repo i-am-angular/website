@@ -8,6 +8,9 @@ import { SwiperComponent } from 'ngx-swiper-wrapper';
   styleUrls: ['./accordion.component.scss']
 })
 export class AccordionComponent {
+  objectKeys = Object.keys;
+  @Input() options: any;
+
   public index = 3;
   sub: any;
 
