@@ -9,6 +9,7 @@ import { SwiperComponent } from 'ngx-swiper-wrapper';
 })
 export class HomeComponent {
   config: any;
+  slides: any[];
 
   constructor(private homeService: HomeService, private cd: ChangeDetectorRef) {
     this.config = {
