@@ -13,7 +13,8 @@ export class HomeComponent {
   constructor() {
     this.config = {
       navigation: true,
-      loop: true
+      loop: true,
+      pagination: true
     };
   }
 }
