@@ -1,7 +1,35 @@
 <div class="waf-home container">
   <div class="waf-content">
 
-    <swiper [config]="config">
+    <swiper [config]="config" (indexChange)="test($event)">
+
+      <div class="swiper-slide">
+        <div class="header-section">
+          <div class="title py-3">wearefrontend&trade;</div>
+        </div>
+
+        <div class="mid-section">
+          <img src="./assets/images/angular.png" />
+          <!--
+              <a style="margin-top: 20px" href="https://gitter.im/wearefrontend/waf-ng" target="_black" class="waf-button">
+                <span>Join waf-ng</span>
+              </a>
+            -->
+        </div>
+
+        <div class="footer">
+          <div class="poke-img">
+            <img class="size-catch" src="./assets/images/catch.png" />
+          </div>
+          <div class="linkedin">
+            <div style="padding-right: 50px; padding-top: 50px;">
+              <a href="https://www.linkedin.com/groups/13737959/" target="_blank">
+                <img style="width: 55px; height: 55px;" src="./assets/linkedin.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="swiper-slide">
         <div class="header-section">
@@ -18,11 +46,19 @@
         </div>
 
         <div class="footer">
-          <div class="pl-3">
+          <div class="poke-img">
             <img class="size-poke" src="./assets/images/sala.png" />
+          </div>
+          <div class="linkedin">
+            <div style="padding-right: 50px; padding-top: 50px;">
+              <a href="https://www.linkedin.com/groups/13737959/" target="_blank">
+                <img style="width: 55px; height: 55px;" src="./assets/linkedin.png" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="swiper-slide">
         <div class="header-section">
           <div class="title py-3">wearefrontend&trade;</div>
@@ -36,11 +72,19 @@
         </div>
 
         <div class="footer">
-          <div class="pl-3">
+          <div class="poke-img">
             <img class="size-poke" src="./assets/images/bulbi.png" />
+          </div>
+          <div class="linkedin">
+            <div style="padding-right: 50px; padding-top: 50px;">
+              <a href="https://www.linkedin.com/groups/13737959/" target="_blank">
+                <img style="width: 55px; height: 55px;" src="./assets/linkedin.png" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="swiper-slide">
         <div class="header-section">
           <div class="title py-3">wearefrontend&trade;</div>
@@ -55,8 +99,15 @@
         </div>
 
         <div class="footer">
-          <div class="pl-3">
+          <div class="poke-img">
             <img class="size-poke" src="./assets/images/cara.png" />
+          </div>
+          <div class="linkedin">
+            <div style="padding-right: 50px; padding-top: 50px;">
+              <a href="https://www.linkedin.com/groups/13737959/" target="_blank">
+                <img style="width: 55px; height: 55px;" src="./assets/linkedin.png" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

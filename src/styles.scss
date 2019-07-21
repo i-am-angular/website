@@ -70,3 +70,11 @@ body {
   opacity: 1;
   right: 0;
 }
+
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  display: flex;
+  top: 20px;
+  left: 50px !important;
+  max-height: 40px;
+}

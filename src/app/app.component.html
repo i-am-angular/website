@@ -3,4 +3,10 @@
   <div class="waf-text">We Are Front End</div>
 </div>
 -->
-<router-outlet></router-outlet>
+<div class="root all-background-theme" [ngClass]="{
+    'all-background-theme': homeService.slideIndex === 0,
+    'vue-background-theme': homeService.slideIndex === 2,
+    'ng-background-theme' : homeService.slideIndex === 1,
+    'react-background-theme': homeService.slideIndex === 3}">
+  <router-outlet></router-outlet>
+</div>

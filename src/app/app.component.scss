@@ -6,6 +6,27 @@
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
+}
 
+.root {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+
+}
+
+.all-background-theme {
+  background: white;
+}
+
+.vue-background-theme {
+  background: #a6ea98;
+}
+
+.ng-background-theme {
+  background: #ff726f;
+}
+
+.react-background-theme {
   background: #87CEFA;
 }
