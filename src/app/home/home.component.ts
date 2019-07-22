@@ -32,11 +32,6 @@ export class HomeComponent {
             src: 'https://miro.medium.com/max/1838/1*8_fSyyWCZg9quYkqLKSlsg.png',
             href: 'https://github.com/vuejs/vue'
           },
-          formation: {
-            label: 'Formations',
-            src: 'https://img.huffingtonpost.com/asset/5cd52750200000320096a5a0.jpeg?ops=scalefit_630_noupscale',
-            href: ''
-          },
           conf: {
             label: 'Conferences',
             src: 'https://s3.amazonaws.com/revue/items/images/002/086/577/mail/19390746_10154637520598091_8432004182598006886_o.jpg?1498727193',
@@ -61,11 +56,6 @@ export class HomeComponent {
             src: 'https://scotch-res.cloudinary.com/image/upload/dpr_3,w_350,q_auto:good,f_auto/media/1/43RVTN2dQKGJxpMDUwUu_jClEMwH.png',
             href: 'https://github.com/angular/angular'
           },
-          formation: {
-            label: 'Formations',
-            src: 'https://img.huffingtonpost.com/asset/5cd52750200000320096a5a0.jpeg?ops=scalefit_630_noupscale',
-            href: ''
-          },
           conf: {
             label: 'Conferences',
             src: 'https://www.ng-conf.org/wp-content/uploads/2018/11/widdisonphotography_0483-900x720.jpg',
@@ -89,11 +79,6 @@ export class HomeComponent {
             label: 'On Github',
             src: 'https://react.rocks/images/converted/react-faq.jpg',
             href: 'https://github.com/facebook/react'
-          },
-          formation: {
-            label: 'Formations',
-            src: 'https://img.huffingtonpost.com/asset/5cd52750200000320096a5a0.jpeg?ops=scalefit_630_noupscale',
-            href: ''
           },
           conf: {
             label: 'Conferences',
