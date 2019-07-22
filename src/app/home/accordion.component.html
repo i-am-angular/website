@@ -1,12 +1,14 @@
 <div class="accordion-container">
   <ng-container *ngFor="let key of objectKeys(options)">
     <div class="card">
-      <img [src]="options[key].src">
-      <div class="card__head" [ngClass]="{
-            'vue-b': index === 0,
-            'vue-background-theme': index === 1,
-            'ng-background-theme' : index === 2,
-            'react-background-theme': index === 3}">{{options[key].label}}</div>
+      <a [href]="options[key].href" target="_blank">
+        <img [src]="options[key].src">
+        <div class="card__head" [ngClass]="{
+              'vue-b': index === 0,
+              'vue-background-theme': index === 1,
+              'ng-background-theme' : index === 2,
+              'react-background-theme': index === 3}">{{options[key].label}}</div>
+      </a>
     </div>
   </ng-container>
 </div>
