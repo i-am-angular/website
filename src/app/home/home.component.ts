@@ -38,13 +38,13 @@ export class HomeComponent {
             href: 'https://www.vuemastery.com/conferences/vueconf-us-2019'
           },
           libs: {
-            label: 'Libraries used with',
+            label: 'Resources',
             src: 'https://user-images.githubusercontent.com/7110136/29002857-9e802f08-7ab4-11e7-9c31-604b5d0d0c19.png',
             href: 'https://github.com/vuejs/awesome-vue'
           },
           job: {
             label: 'Jobs',
-            src: 'https://cdn-images-1.medium.com/max/280/1*oYqTFcLMerYbhTJqyQ8AQg@2x.jpeg',
+            src: 'https://vuejs.org/images/vuejobs.png',
             href: 'https://vuejobs.com/'
           },
         }
@@ -62,7 +62,7 @@ export class HomeComponent {
             href: 'https://www.youtube.com/user/ngconfvideos/videos'
           },
           libs: {
-            label: 'Libraries used with',
+            label: 'Resources',
             src: 'https://ngrx.io/assets/images/badge.svg',
             href: 'https://github.com/PatrickJS/awesome-angular'
           },
@@ -86,7 +86,7 @@ export class HomeComponent {
             href: 'https://www.youtube.com/channel/UCz5vTaEhvh7dOHEyd1efcaQ/videos'
           },
           libs: {
-            label: 'Libraries used with',
+            label: 'Resources',
             src: 'https://redux.js.org/img/redux-logo-twitter.png',
             href: 'https://github.com/enaqx/awesome-react'
           },
