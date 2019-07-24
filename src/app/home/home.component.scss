@@ -261,3 +261,59 @@
   height:100%;
   width:100%;
 }
+
+.blockquote-wrapper {
+  display: flex;
+  height: 250px;
+  padding: 0 20px;
+}
+
+.blockquote {
+   position: relative;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 800;
+   color: #ffffff;
+   width: 100%;
+   //max-width: 500px;
+   z-index: 1;
+   align-self: center;
+   border-top: solid 1px;
+   border-bottom: solid 1px;
+}
+
+.blockquote h1 {
+   position: relative;
+   color: #292a2b;
+   font-size: 40px;
+   font-weight: 800;
+   line-height: 1;
+   margin: 0;
+}
+
+.blockquote:after {
+   position: absolute;
+   content: "”";
+   color: #292a2b;
+   font-size: 10rem;
+   line-height: 0;
+   bottom: -43px;
+   right: 30px;
+}
+
+@media all and (min-width: 600px) {
+   .blockquote h1 {
+       font-size: 60px;
+  }
+
+}
+
+.blockquote h4 {
+   position: relative;
+   color: #292a2b;
+   font-size: 1.4rem;
+   font-weight: normal;
+   line-height: 1;
+   margin: 0;
+   padding-top: 20px;
+   z-index: 1;
+}
