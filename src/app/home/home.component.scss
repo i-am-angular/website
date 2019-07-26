@@ -111,7 +111,7 @@
 }
 
 .fw-img {
-  height: 120px;
+  height: 118px;
   width: 90px;
 }
 
@@ -150,10 +150,6 @@
   animation-iteration-count: infinite;
   animation-duration: 4s;
   animation-direction: alternate;
-  }
-
-@include media-breakpoint-up(md) {
-
 }
 
 .swiper-slide {
@@ -227,7 +223,8 @@
       animation-duration: 10s;
       animation-iteration-count: infinite;
 
-      padding-inline-start: 15px;
+      padding-inline-start: 0px;
+      padding-left: 15px;
 
       &__item {
         line-height:40px;
@@ -332,7 +329,7 @@
 .blockquote h1 {
    position: relative;
    color: #292a2b;
-   font-size: 40px;
+   font-size: 36px;
    font-weight: 800;
    line-height: 1;
    margin: 0;
@@ -348,13 +345,6 @@
    right: 30px;
 }
 
-@media all and (min-width: 600px) {
-   .blockquote h1 {
-       font-size: 60px;
-  }
-
-}
-
 .blockquote h4 {
    position: relative;
    color: #292a2b;
@@ -364,4 +354,14 @@
    margin: 0;
    padding-top: 20px;
    z-index: 1;
+}
+
+@include media-breakpoint-up(lg) {
+  .blockquote h1 {
+    font-size: 60px;
+  }
+
+  .blockquote h4 {
+    font-size: 1.6rem;
+  }
 }
