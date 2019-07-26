@@ -292,6 +292,7 @@
 }
 
 .circle {
+  position: relative;
   background-color:#fff;
   border: 2px solid black;
   -webkit-box-shadow: 2px 2px 14px 1px rgba(0,0,0,0.81);
@@ -302,7 +303,38 @@
   border-radius:50%;
   -moz-border-radius:50%;
   -webkit-border-radius:50%;
+  overflow: hidden;
   
+} 
+
+.play-ico{
+  position: absolute;
+  padding:49px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes playFadeInOut {
+  0% { opacity:1; }
+  10% { opacity:0.9; }
+  20% { opacity:0.8; }
+  30% { opacity:0.7; }
+  40% { opacity:0.6; }
+  50% { opacity:0.5; }
+  60% { opacity:0.6; }
+  70% { opacity:0.7; }
+  80% { opacity:0.8; }
+  90% { opacity:0.9; }
+  100% { opacity:1; }
+}
+.play-ico {
+  animation-name: playFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
 }
 
 .avatar{
