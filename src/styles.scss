@@ -87,6 +87,35 @@ body {
   border-radius: 5px;
 }
 
+.swiper-button-prev {
+  display: none;
+}
+
+.swiper-button-next {
+  display: none;
+}
+
+//https://www.flaticon.com/free-icon/left-chevron_566011
+//https://www.flaticon.com/free-icon/right-chevron_566012
+@media screen and (min-width: 800px) {
+  .swiper-button-prev {
+    display: block;
+    background-image: url('./assets/icons/left-chevron.png') !important;
+    background-size: 64px 64px !important;
+    width: 64px !important;
+    height: 64px !important;
+    left: 0px !important;
+  }
+
+  .swiper-button-next {
+    display: block;
+    background-image: url('./assets/icons/right-chevron.png') !important;
+    background-size: 64px 64px !important;
+    width: 64px !important;
+    height: 64px !important;
+    right: 0px !important;
+  }
+}
 
 .all-background-theme {
   background: white;

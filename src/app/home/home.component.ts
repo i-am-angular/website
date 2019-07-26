@@ -16,6 +16,7 @@ export class HomeComponent {
       loop: true,
       keyboard: true,
       mousewheel: false,
+      navigation: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -100,7 +101,7 @@ export class HomeComponent {
     ];
   }
 
-  ic(newIndex) {
+  onIndexChange(newIndex) {
     this.homeService.slideIndex = newIndex;
   }
 
