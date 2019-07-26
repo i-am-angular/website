@@ -69,7 +69,9 @@
   justify-content: center;
   align-items: center;
 
-  min-height: 500px;
+  min-height: 700px;
+
+  padding: 50px 0;
 
   flex: 1;
 }
@@ -100,7 +102,6 @@
 }
 
 .poke-img {
-  padding-bottom: 20px;
   position:relative;
   width: 89px;
   height: 119px;
@@ -109,7 +110,7 @@
 }
 
 .fw-img {
-  height: 120px;
+  height: 118px;
   width: 90px;
 }
 
@@ -148,14 +149,18 @@
   animation-iteration-count: infinite;
   animation-duration: 4s;
   animation-direction: alternate;
-  }
-
-@include media-breakpoint-up(md) {
-
 }
 
 .swiper-slide {
   height: 100%;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 12px;
+  padding-left: 50px;
 }
 
 .footer {
@@ -163,7 +168,6 @@
   flex-direction: row;
   justify-content: center;
   font-size: 12px;
-  padding-left: 50px;
 }
 
 .linkedin {
@@ -179,7 +183,7 @@
 
   color: black;
   overflow: hidden;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 
   font-family: 'Lato', sans-serif;
   font-size: 35px;
@@ -225,7 +229,8 @@
       animation-duration: 10s;
       animation-iteration-count: infinite;
 
-      padding-inline-start: 15px;
+      padding-inline-start: 0px;
+      padding-left: 15px;
 
       &__item {
         line-height:40px;
@@ -345,7 +350,7 @@
 
 .blockquote-wrapper {
   display: flex;
-  height: 250px;
+  height: 220px;
   padding: 0 20px;
 }
 
@@ -362,7 +367,7 @@
 .blockquote h1 {
    position: relative;
    color: #292a2b;
-   font-size: 40px;
+   font-size: 36px;
    font-weight: 800;
    line-height: 1;
    margin: 0;
@@ -378,13 +383,6 @@
    right: 30px;
 }
 
-@media all and (min-width: 600px) {
-   .blockquote h1 {
-       font-size: 60px;
-  }
-
-}
-
 .blockquote h4 {
    position: relative;
    color: #292a2b;
@@ -394,4 +392,14 @@
    margin: 0;
    padding-top: 20px;
    z-index: 1;
+}
+
+@include media-breakpoint-up(lg) {
+  .blockquote h1 {
+    font-size: 60px;
+  }
+
+  .blockquote h4 {
+    font-size: 1.6rem;
+  }
 }
