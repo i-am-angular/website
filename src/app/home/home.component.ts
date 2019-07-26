@@ -14,6 +14,7 @@ export class HomeComponent {
   constructor(private homeService: HomeService, private cd: ChangeDetectorRef) {
     this.config = {
       loop: true,
+      threshold: 40,
       keyboard: true,
       mousewheel: false,
       navigation: true,
