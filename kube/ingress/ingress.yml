@@ -2,7 +2,14 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: do-kubernetes-sample-ingress
+  annotations:  
+    kubernetes.io/ingress.class: nginx
+    certmanager.k8s.io/cluster-issuer: letsencrypt-prod
 spec:
+  tls:
+    - hosts:
+      - www.wearefrontend.com
+      secretName: letsencrypt-prod
   rules:
   - host: www.wearefrontend.com
     http:
