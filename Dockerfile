@@ -19,4 +19,4 @@ EXPOSE 4200
 
 # We start our application by calling
 # npm start.
-ENTRYPOINT ["ng", "serve", "--host", "0.0.0.0", "--disable-host-check", "true", "--publicHost", "www.stritfighter.com"]
+ENTRYPOINT ["ng", "serve", "--host", "0.0.0.0", "--disable-host-check", "true", "--publicHost", "www.wearefrontend.com"]
