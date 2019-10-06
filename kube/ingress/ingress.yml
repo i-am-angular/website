@@ -9,6 +9,7 @@ spec:
   tls:
     - hosts:
       - www.wearefrontend.com
+      - www.stritfighter.com
       secretName: letsencrypt-prod
   rules:
   - host: www.wearefrontend.com
@@ -17,4 +18,16 @@ spec:
       - path: /
         backend:
           serviceName: do-kubernetes-sample-app
+          servicePort: 80
+
+  - host: www.stritfighter.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: do-kubernetes-sffe-app
+          servicePort: 80
+      - path: "/api"
+        backend:
+          serviceName: do-kubernetes-sfbe-app
           servicePort: 80
