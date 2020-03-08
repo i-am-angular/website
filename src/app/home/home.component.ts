@@ -89,7 +89,7 @@ export class HomeComponent {
           },
           libs: {
             label: 'Resources',
-            src: 'https://redux.js.org/img/redux-logo-twitter.png',
+            src: 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png',
             href: 'https://github.com/enaqx/awesome-react'
           },
           job: {
