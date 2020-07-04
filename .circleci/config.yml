@@ -1,44 +1,18 @@
 version: 2.1
-jobs:
-  build:
-    docker:
-      - image: circleci/buildpack-deps:stretch
-    environment:
-      IMAGE_NAME: nasreddineskandrani/de
-    working_directory: ~/app
-    steps:
-      - checkout
-      - setup_remote_docker
-      - run:
-          name: Build Docker image
-          command: |
-            docker build -t $IMAGE_NAME:latest .
-      - run:
-          name: Push Docker Image
-          command: |
-            echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
-            docker tag $IMAGE_NAME:latest $IMAGE_NAME:$CIRCLE_SHA1
-            docker push $IMAGE_NAME:latest
-            docker push $IMAGE_NAME:$CIRCLE_SHA1
-      - run:
-          name: Install envsubst
-          command: |
-            sudo apt-get update && sudo apt-get -y install gettext-base
-      - run:
-          name: Install kubectl
-          command: |
-            curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
-            chmod u+x ./kubectl
-      - run:
-          name: Deploy Code
-          command: |
-            chmod +x ./scripts/ci-deploy.sh
-            ./scripts/ci-deploy.sh
+
+orbs:
+  aws-ecr: circleci/aws-ecr@6.7.0
+
 workflows:
-  version: 2
-  build-master:
+  build_and_push_image:
     jobs:
-      - build:
-          filters:
-            branches:
-              only: master
+      - aws-ecr/build-and-push-image:
+          account-url: AWS_ECR_ACCOUNT_URL
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+          create-repo: true
+          dockerfile: Dockerfile
+          path: .
+          region: AWS_REGION
+          repo: circleci-ecr-orb-demo
+          tag: "$CIRCLE_SHA1"
