@@ -15,8 +15,8 @@ RUN npm install -g @angular/cli@8.0.0
 # to the app direcoty
 COPY . /usr/src/app
 
-EXPOSE 4200
+EXPOSE 80
 
 # We start our application by calling
 # npm start.
-ENTRYPOINT ["ng", "serve", "--host", "0.0.0.0", "--disable-host-check", "true", "--publicHost", "www.wearefrontend.com"]
+ENTRYPOINT ["ng", "serve", "--host", "0.0.0.0", "--port", "80", "--disable-host-check", "true", "--publicHost", "www.wearefrontend.com"]
